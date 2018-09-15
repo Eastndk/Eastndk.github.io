@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <style>
+
+  body {
+    position: relative;
+    font-family: Montserrat, sans-serif;;
+    color: #555;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  .jumbotron {
+    font-family: Montserrat, sans-serif;
+    background: rgb(35, 77, 38);
+    text-align: center;
+    color: white;
+    min-height: 200px;
+  }
+
+  .headercontent {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-top: 35px;
+  }
+
+
+  .panel-footer.panel-custom {
+    background: rgb(35, 77, 38);
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .scrollspy-example {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+  }
+
+  .navbar-default {
+    font-family: Montserrat, sans-serif;
+    background-color: rgb(35, 77, 38);
+    letter-spacing: 2px;
+  }
+
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .navbar-default .nav-tabs .nav-link {
+      color: white;
+  }
+
+  .navbar-default .nav-tabs li a:hover, .navbar-default .nav-tabs .nav-link.active {
+    color: rgb(35, 77, 38) !important;
+    background-color: #fff !important;
+  }
+
+  .sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  .card-header {
+    background: rgb(35, 77, 38);
+    color: white;
+    height: 175px;
+  }
+
+  .card-footer {
+    background: rgb(35, 77, 38);
+    color: white;
+    height: 50px;
+  }
+
+  .card-footer-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .card-title {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .pagetitle {
+  position: relative;
+  float: left;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
+
+</head>
+<body data-spy="scroll" data-target="#spy" data-offset="50" >
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-default fixed-top" >
+
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.png" alt="Logo" style="width:40px;">
+      </a>
+
+      <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="spy" class="navbar-collapse collapse">
+          <ul class="nav nav-tabs ml-auto nav-fill">
+            <li class="nav-item"><a class="nav-link" href="#smc">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#roadmap">Programme</a></li>
+            <li class="nav-item"><a class="nav-link" href="#resources">Network</a></li>
+            <li class="nav-item"><a class="nav-link" href="#smc">Recidencies</a></li>
+            <li class="nav-item"><a class="nav-link" href="#roadmap">Venues</a></li>
+            <li class="nav-item"><a class="nav-link" href="#resources">Info</a></li>
+            <li class="nav-item"><a class="nav-link" href="#resources">Blog</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid" style="padding: 0">
+      <div class="jumbotron">
+        <h3 class="headercontent">
+        Queens Festival
+        </h3>
+      </div>
+  </header>
+
+
+  <div class="container" style="height: 15px";>  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-3 order-12 order-lg-1">
+        <div class="card text-center" >
+          <img class="card-img-top" src="img_2.jpg" alt="Card image" style="width:100%; max-height: 300px">
+          <div class="card-header">
+            <h3 class="card-title">What is Sound and Music Computing?</h3>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              The SMCNetwork.org portal is hosted by the <a href=https://www.upf.edu/web/mtg>Music Technology Group</a>  of the
+              <a href=http://www.upf.edu/>Universitat Pompeu Fabra</a> of Barcelona
+              as a service to the whole SMC community.
+              <br /><br />
+              This initiative was started as an outcome of the <a href=https://www.upf.edu/web/mtg/s2s2>S2S² EU project</a>
+              and it is now under the supervision of the SMC board.
+            </p>
+          </div>
+      </div>
+    </div>
+
+      <div class="col-12 col-sm-6 col-lg-6 order-1 order-sm-1 order-lg-2">
+        <div class="card" style="max-height:900px; min-width: 300px">
+          <img class="card-img-top" src="smc_cover.png" alt="Card image" style="width:100%; max-height: 300px">
+          <div class="card-header">
+            <h3 class="card-title">Sound and Music Computing Network</h3>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              Welcome to the portal of the Sound and Music Computing Community. Here you will find information about the SMC conference and summer school, SMC related research groups and publications and much more.
+              <br /><br />
+              If you want to be updated on SMC activities, subscribe to the mailing list of SMCNETWORK through <a href="https://groups.google.com/a/llista.upf.edu/forum/#!forum/smcnetwork">this link</a> using your gmail address account.
+              <br /><br />
+              You can also subscribe to our <a href=https://www.facebook.com/smcnetorg>facebook page</a>.
+              <br /><br />
+              Follow us on <a href="https://twitter.com/smcnetorg">Twitter</a> to get the latest news about the SMC conference and the SMC Network in general.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 order-2 col-lg-3">
+        <div class="card" style="max-height:600px">
+          <a class="twitter-timeline" data-height="1000" data-theme="light" data-link-color="#006580" href="https://twitter.com/smcnetorg/lists/smc-network?ref_src=twsrc%5Etfw">A Twitter List by smcnetorg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)";>
+    <div  style="height: 150px; position: relative">
+      <h1 class="pagetitle">About Queens Festival</h1>
+    </div>
+
+
+    <div class="card-columns mx-auto" style="max-width:1000px">
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_33.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">How to host SMC</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            If anyone is interested to organize a future edition of SMC, please browse the <a href="guidelines.pdf">guidelines</a> and contact the <a href="mailto:smc-committee@googlegroups.com">steering committee</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="programme" class="container-fluid" style="min-height: 100px">
+    <div  style="height: 150px; position: relative">
+      <h1 class="pagetitle">Programme</h1>
+    </div>
+
+    <div class="card-columns mx-auto" style="max-width:1000px">
+      <div class="card text-center" >
+        <a href="roadmap.html#scenarios">
+          <img class="card-img-top" src="img_5.jpg" alt="Card image" style="width:100%; max-height: 300px">
+          <div class="card-header">
+            <h3 class="card-title">Scenarios</h3>
+          </div>
+        </a>
+        <div class="card-body">
+          <p class="card-text">
+            The three scenarios presented here represent visions of life after a few attainable (though not necessarily easy) scientific/technological targets have been hit through the removal of roadblocks, the filling-in of gaps and the meeting of certain challenges as outlined in another section of the Roadmap.
+          </p>
+        </div>
+        <a href="roadmap.html#scenarios" style="background: #1B6884; color: white">
+          <div class="card-footer">
+            <p class="card-footer-text">More</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="network" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)";>
+    <div  style="height: 150px; position: relative">
+      <h1 class="pagetitle">Network</h1>
+    </div>
+
+    <div class="card-columns mx-auto" style="max-width:1000px">
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_11.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Events</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            We just created a new <a href="http://smcnetwork.org/resources">resource</a> to list the upcoming conferences and calls for journals related to Sound and Music Computing: <a href="http://conferences.smcnetwork.org/">conferences</a>.
+            <br /><br />
+            Contributions can be made by anyone by forking the repository on github and submitting a pull request: <a href="https://github.com/mtg/conferences">GitHub</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Recidencies" class="container-fluid" style="min-height: 100px">
+    <div  style="height: 150px; position: relative">
+      <h1 class="pagetitle">Recidencies</h1>
+    </div>
+
+    <div class="card-columns mx-auto" style="max-width:1000px">
+      <div class="card text-center" >
+        <a href="roadmap.html#scenarios">
+          <img class="card-img-top" src="img_5.jpg" alt="Card image" style="width:100%; max-height: 300px">
+          <div class="card-header">
+            <h3 class="card-title">Scenarios</h3>
+          </div>
+        </a>
+        <div class="card-body">
+          <p class="card-text">
+            The three scenarios presented here represent visions of life after a few attainable (though not necessarily easy) scientific/technological targets have been hit through the removal of roadblocks, the filling-in of gaps and the meeting of certain challenges as outlined in another section of the Roadmap.
+          </p>
+        </div>
+        <a href="roadmap.html#scenarios" style="background: #1B6884; color: white">
+          <div class="card-footer">
+            <p class="card-footer-text">More</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="venues" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)";>
+    <div  style="height: 150px; position: relative">
+      <h1 class="pagetitle">Venues</h1>
+    </div>
+
+    <div class="card-columns mx-auto" style="max-width:1000px">
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_11.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Events</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            We just created a new <a href="http://smcnetwork.org/resources">resource</a> to list the upcoming conferences and calls for journals related to Sound and Music Computing: <a href="http://conferences.smcnetwork.org/">conferences</a>.
+            <br /><br />
+            Contributions can be made by anyone by forking the repository on github and submitting a pull request: <a href="https://github.com/mtg/conferences">GitHub</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="info" class="container-fluid" style="min-height: 100px">
+    <div  style="height: 150px; position: relative">
+      <h1 class="pagetitle">Info</h1>
+    </div>
+
+    <div class="card-columns mx-auto" style="max-width:1000px">
+      <div class="card text-center" >
+        <a href="roadmap.html#scenarios">
+          <img class="card-img-top" src="img_5.jpg" alt="Card image" style="width:100%; max-height: 300px">
+          <div class="card-header">
+            <h3 class="card-title">Scenarios</h3>
+          </div>
+        </a>
+        <div class="card-body">
+          <p class="card-text">
+            The three scenarios presented here represent visions of life after a few attainable (though not necessarily easy) scientific/technological targets have been hit through the removal of roadblocks, the filling-in of gaps and the meeting of certain challenges as outlined in another section of the Roadmap.
+          </p>
+        </div>
+        <a href="roadmap.html#scenarios" style="background: #1B6884; color: white">
+          <div class="card-footer">
+            <p class="card-footer-text">More</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="blog" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)";>
+    <div  style="height: 150px; position: relative">
+      <h1 class="pagetitle">Blog</h1>
+    </div>
+
+    <div class="card-columns mx-auto" style="max-width:1000px">
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_11.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Events</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            We just created a new <a href="http://smcnetwork.org/resources">resource</a> to list the upcoming conferences and calls for journals related to Sound and Music Computing: <a href="http://conferences.smcnetwork.org/">conferences</a>.
+            <br /><br />
+            Contributions can be made by anyone by forking the repository on github and submitting a pull request: <a href="https://github.com/mtg/conferences">GitHub</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-footer panel-custom">All content is licensed under a <b><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" style="color: white; text-decoration: underline;";>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></b> unless otherwise specified.</div>
+</body>
+</html>
