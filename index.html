@@ -65,21 +65,29 @@
 
   .custom-toggler.navbar-toggler {
     border-color: rgb(91, 76, 135);
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 
   .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
 
-  .navbar-default .nav-tabs .nav-link {
+  .navbar-default .nav-pills .nav-link {
       color: white;
+      border-radius: 0px;
+      line-height: 34px;
   }
 
-  .navbar-default .nav-tabs li a:hover, .navbar-default .nav-tabs .nav-link.active {
+  .navbar-default .nav-pills li a:hover, .navbar-default .nav-pills .nav-link.active {
     color: rgb(91, 76, 135) !important;
     background-color: #fff !important;
+  }
+
+  .register {
+    background: white;
+    line-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(91, 76, 135);
   }
 
   .sticky.is-sticky {
@@ -118,11 +126,11 @@
   }
 
   .pagetitle {
-  position: relative;
-  float: left;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: relative;
+    float: left;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
 </style>
@@ -131,23 +139,28 @@
 <body data-spy="scroll" data-target="#spy" data-offset="200" >
   <header>
 
-    <nav class="navbar navbar-expand-lg navbar-default fixed-top" >
+    <nav class="navbar navbar-expand-lg navbar-default fixed-top"  style="height:50px;">
 
       <a class="navbar-brand" href="index.html">
-        <img src="logo.png" alt="Logo" style="width:250px;">
+        <img src="logo.png" alt="Logo" style="width:100px;">
       </a>
+
+      <a href="#" class="mr-auto">
+        <div class="register">
+          Register!
+        </div>
+      </a>
+
 
       <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div id="spy" class="navbar-collapse collapse">
-          <ul class="nav nav-tabs ml-auto nav-fill">
+      <div id="spy" class="navbar-collapse collapse flex-grow-0">
+          <ul class="nav nav-pills ml-auto nav-fill">
             <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
             <li class="nav-item"><a class="nav-link" href="#programme">Programme</a></li>
-            <li class="nav-item"><a class="nav-link" href="#network">Network</a></li>
             <li class="nav-item"><a class="nav-link" href="#venues">Venues</a></li>
-            <li class="nav-item"><a class="nav-link" href="#info">Info</a></li>
           </ul>
       </div>
     </nav>
@@ -210,7 +223,7 @@
   </div>
 
   <div id="events" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)";>
-    <div  style="height: 200px; position: relative">
+    <div  style="height: 100px; position: relative">
       <h1 class="pagetitle">Events</h1>
     </div>
 
@@ -241,7 +254,7 @@
 
 
     <div class="card text-center" >
-      <img class="card-img-top" src="Small.jpg" alt="Card image" style="width:100%">
+      <img class="card-img-top" src="small.jpg" alt="Card image" style="width:100%">
       <div class="card-header">
         <h3 class="card-title">Small composers</h3>
       </div>
@@ -279,7 +292,7 @@
     </div>
 
     <div class="card text-center" >
-      <img class="card-img-top" src="Chrysler.jpg" alt="Card image" style="width:100%">
+      <img class="card-img-top" src="Chrysler.JPG" alt="Card image" style="width:100%">
       <div class="card-header">
         <h3 class="card-title">Dorit Chrysler Theremin Concert</h3>
       </div>
@@ -350,7 +363,7 @@
 
 
   <div id="programme" class="container-fluid" style="min-height: 100px">
-    <div  style="height: 200px; position: relative">
+    <div  style="height: 100px; position: relative">
       <h1 class="pagetitle">Programme</h1>
     </div>
 
@@ -376,75 +389,50 @@
     </div>
   </div>
 
-  <div id="network" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)";>
-    <div  style="height: 200px; position: relative">
-      <h1 class="pagetitle">Network</h1>
-    </div>
-
-    <div class="card-columns mx-auto" style="max-width:1000px">
-      <div class="card text-center" >
-        <img class="card-img-top" src="img_11.jpg" alt="Card image" style="width:100%; max-height: 300px">
-        <div class="card-header">
-          <h3 class="card-title">Associations</h3>
-        </div>
-        <div class="card-body">
-          <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
-            <br /><br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="venues" class="container-fluid" style="min-height: 100px";>
-    <div  style="height: 200px; position: relative">
+  <div id="venues" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)";>
+    <div  style="height: 100px; position: relative">
       <h1 class="pagetitle">Venues</h1>
     </div>
 
     <div class="card-columns mx-auto" style="max-width:1000px">
       <div class="card text-center" >
-        <img class="card-img-top" src="img_11.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <img class="card-img-top" src="aau.jpg" alt="Card image" style="width:100%; max-height: 300px">
         <div class="card-header">
-          <h3 class="card-title">COSMO RODEWALD CONCERT HALL</h3>
+          <h3 class="card-title">Aalborg University Copenhagen</h3>
         </div>
         <div class="card-body">
           <p class="card-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
-            <br /><br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
           </p>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div id="info" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)">
-    <div  style="height: 200px; position: relative">
-      <h1 class="pagetitle">Info</h1>
-    </div>
-
-    <div class="card-columns mx-auto" style="max-width:1000px">
       <div class="card text-center" >
-        <a href="roadmap.html#scenarios">
-          <img class="card-img-top" src="img_5.jpg" alt="Card image" style="width:100%; max-height: 300px">
-          <div class="card-header">
-            <h3 class="card-title">Videos</h3>
-          </div>
-        </a>
+        <img class="card-img-top" src="kirke.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Frederiksholm Kirke</h3>
+        </div>
         <div class="card-body">
           <p class="card-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
           </p>
         </div>
-        <a href="roadmap.html#scenarios" style="background: #1B6884; color: white">
-          <div class="card-footer">
-            <p class="card-footer-text">More</p>
-          </div>
-        </a>
       </div>
     </div>
+
+    <div id="googleMap" style="height:400px;width:100%;"></div>
+    <script>
+    function myMap() {
+    var kirke = new google.maps.LatLng(55.650773, 12.534305);
+    var AAU = new google.maps.LatLng(55.650346, 12.543035);
+    var mapProp = {center:AAU, zoom:15, scrollwheel:false, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    var marker = new google.maps.Marker({position:AAU});
+    var marker2 = new google.maps.Marker({position:kirke});
+    marker.setMap(map);
+    marker2.setMap(map);
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYYeCaLmBl6-LxjwJkp-3x9xBkLpzRV4w&callback=myMap"></script>
   </div>
 
   <div class="panel-footer panel-custom">All content is licensed under a <b><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" style="color: white; text-decoration: underline;";>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></b> unless otherwise specified.</div>
