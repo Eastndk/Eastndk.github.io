@@ -27,22 +27,6 @@
   color: red;
   }
 
-  .jumbotron {
-    background-image: url(jumbo.jpg);
-    font-family: Montserrat, sans-serif;
-    text-align: center;
-    color: white;
-    min-height: 200px;
-  }
-
-  .headercontent {
-    font-family: Montserrat, sans-serif;
-    color: white;
-    font-size: 40px;
-    padding-top: 75px;
-  }
-
-
   .panel-footer.panel-custom {
     background: rgb(91, 76, 135);
     color: white;
@@ -131,6 +115,36 @@
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: rgb(91, 76, 135);
+  }
+
+  .carousel-sidebar {
+    -ms-flex: 0 0 500px;
+    flex: 0 0 500px;
+    overflow:visible !important;
+  }
+
+  .dropdown {
+    overflow:visible !important;
+  }
+
+  .dropdown-menu {
+    width: 485px;
+    border-radius: 0px;
+    border: none;
+    margin-right: -5px;
+    margin-top: -1px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .date_btn{
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    border-color: white;
+    background: rgb(91, 76, 135);
+    color:white;
   }
 
 </style>
@@ -142,7 +156,7 @@
     <nav class="navbar navbar-expand-lg navbar-default fixed-top"  style="height:50px;">
 
       <a class="navbar-brand" href="index.html">
-        <img src="logo.png" alt="Logo" style="width:100px;">
+        <img src="images/logo.png" alt="Logo" style="width:100px;">
       </a>
 
       <a href="#" class="mr-auto">
@@ -166,14 +180,130 @@
     </nav>
 
     <div class="container-fluid" style="padding: 0">
-      <div class="jumbotron">
-        <h3 class="headercontent">
-        Queens Festival
-        <br /><br />
-        Copenhagen
-        <br /><br />
-        May 13th-16th, 2019
-        </h3>
+      <div class="card" style="min-width: 300px">
+        <div id="slide" class="carousel slide" data-ride="carousel" data-interval="10000">
+          <ul class="carousel-indicators">
+            <li data-target="#slide" data-slide-to="0" class="active"></li>
+            <li data-target="#slide" data-slide-to="1"></li>
+          </ul>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-sm-1">
+                  <img src="images/call.jpg" alt="Slide_1">
+                </div>
+                <div class="col ml-auto carousel-sidebar">
+                  <div class="row">
+                    <div class="col-sm-12" style="background: rgb(91, 76, 135); height: 40px"></div>
+                    <div class="col-sm-12 text-center" style="background: white; height: 160px">
+                      <h1 style="line-height: 160px; color: rgb(91, 76, 135)"><b>Call for Submissions!</b></h1>
+                    </div>
+
+                    <div class="dropdown_jumbo" style="width: 500px">
+                      <a href="#" data-toggle="dropdown" >
+                        <div class="col-sm-12 text-center" style="background: rgb(91, 76, 135); height: 54px">
+                          <h6 style="line-height: 54px; color: white"><b>100 years of the theramin</b></h6>
+                        </div>
+                      </a>
+                      <div class="dropdown-menu text-center" style="background: rgb(91, 76, 135); color: white;">
+                        <p>
+                          2019 marks the 100th anniversary of the theremin, and we celebrate this by inviting Dorit Chrysler to Copenhagen for a concert and a workshop.
+                          <br /><br />
+                          We ask anyone to contribute in the celebration with talks or workshops that explore the history of the theremin and/or its impact on electronic music.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="dropdown_jumbo" style="width: 500px">
+                      <a href="#" data-toggle="dropdown">
+                        <div class="col-sm-12 text-center" style="background: white; height: 54px">
+                          <h6 style="line-height: 54px; color: rgb(91, 76, 135)"><b>Queen tribute concert</b></h6>
+                        </div>
+                      </a>
+                      <div class="dropdown-menu text-center" style="background: white; color: rgb(91, 76, 135);">
+                        <p>
+                          Let’s cover some Queen! On the final day of the festival, we want anyone musically inclined to channel their inner Freddie Mercury.
+                          <br /><br />
+                          We hope to see music created with physical modeling, self made instruments, real world sampling, audience participation, interesting visuals, etc.
+                          <br /><br />
+                          We only ask that:
+                          <ul class="text-left">
+                            <li>You play songs from the Queen repertoire</li>
+                            <li>You incorporate the spirit of art, science, technology, and digital creativity</li>
+                          </ul>
+                          <br /><br />
+                          If you have the music, but lack the singing (or vice versa), let us know and we’ll try to help with the pairing. Or maybe you just want to contribute with cool visuals? Let us know.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="dropdown_jumbo" style="width: 500px">
+                      <a href="#" data-toggle="dropdown">
+                        <div class="col-sm-12 text-center" style="background: rgb(91, 76, 135); height: 54px">
+                          <h6 style="line-height: 54px; color: white"><b>Installations at AAU campus</b></h6>
+                        </div>
+                      </a>
+                      <div class="dropdown-menu text-center" style="background: rgb(91, 76, 135); color: white;">
+                        <p>
+                          The Aalborg University Copenhagen building has some interesting features that could lend itself to interesting art or technology installations.
+                          <br /><br />
+                          We encourage anyone to submit suggestions to installations with sound, technology, lighting, sensors, projection, etc. that utilise some of the characteristic areas of AAU CPH:
+                          <ul class="text-left">
+                            <li>We are situated next to the water.</li>
+                            <li>An arched bridge connects the two buildings.</li>
+                            <li>The main entrance has steps flanked by a cascading fountain.</li>
+                            <li>The reception has a spiral staircase and an open space that leads 5 stories up in the air.</li>
+                          </ul>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="dropdown_jumbo" style="width: 500px">
+                      <a href="#" data-toggle="dropdown">
+                        <div class="col-sm-12 text-center" style="background: white; height: 54px">
+                          <h6 style="line-height: 54px; color: rgb(91, 76, 135)"><b>Sonic or visual navigation at AAU campus</b></h6>
+                        </div>
+                      </a>
+                      <div class="dropdown-menu text-center" style="background: white; color: rgb(91, 76, 135);">
+                        <p>
+                          Lead visitors to and from points of interest in the AAU building during the Queens Festival. Create the “trail of breadcrumbs” that will allow visitors to find their way to the workshops, talks, and installations at AAU.
+                          <ul class="text-left">
+                            <li>The single longest trips will be approximately 75 meters, the shorter ones 10-15 meters. </li>
+                            <li>Preferably, users shouldn’t be required to use a piece of technology (e.g. a smartphone) to receive information on how to go from A to B.</li>
+                          </ul>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="dropdown_jumbo" style="width: 500px">
+                      <a href="#" data-toggle="dropdown">
+                        <div class="col-sm-12 text-center" style="background: rgb(91, 76, 135); height: 54px">
+                          <h6 style="line-height: 54px; color: white"><b>Open submissions</b></h6>
+                        </div>
+                      </a>
+                      <div class="dropdown-menu text-center" style="background: rgb(91, 76, 135); color: white;">
+                        <p>
+                          We encourage anyone to submit talks or workshops that celebrates digital creativity within the areas of art, science, technology, and sound.
+                        </p>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-sm-8">
+                  <img src="images/call.jpg" alt="Slide_2">
+                </div>
+                <div class="col-sm-4" style="background: rgb(91, 76, 135)">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
   </header>
 
@@ -184,7 +314,7 @@
     <div class="row">
       <div class="col-12 col-lg-3 order-12 order-lg-1">
         <div class="card text-center" >
-          <img class="card-img-top" src="img_2.jpg" alt="Card image" style="width:100%; max-height: 300px">
+          <img class="card-img-top" src="images/eastn.png" alt="Card image" style="width:100%; max-height: 300px">
           <div class="card-header">
             <h3 class="card-title">What is EASTN?</h3>
           </div>
@@ -193,22 +323,23 @@
               The European Art - Science - Technology Network (EASTN) for Digital Creativity is a project that emerged from several European institutions involved in research, technology development, creation and education in the field of technologies applied to artistic creation. At European Level, this network is coordinated by <a href="http://www.acroe-ica.org/en">ACROE</a> (Grenoble, France) and supported by the Culture Program of the European Union since November 2017.
             </p>
           </div>
+          <a href="http://www.eastn.eu" style="background: #1B6884; color: white">
+            <div class="card-footer" style="height: 75px">
+              <p class="card-footer-text">Learn more about EASTN</p>
+            </div>
+          </a>
       </div>
     </div>
 
       <div class="col-12 col-sm-6 col-lg-6 order-1 order-sm-1 order-lg-2">
         <div class="card" style="min-width: 300px">
-          <img class="card-img-top" src="smc_cover.png" alt="Card image" style="width:100%; max-height: 300px">
+          <img class="card-img-top" src="images/jumbo.jpg" alt="Card image" style="width:100%; max-height: 300px">
           <div class="card-header">
-            <h3 class="card-title">Queens Festival</h3>
+            <h3 class="card-title">Queens Festival<br /><br />Copenhagen<br /><br />May 12th-16th, 2019</h3>
           </div>
           <div class="card-body">
             <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
-              <br /><br />
-              Nulla mollis augue erat, sit amet fringilla tellus accumsan a. Integer varius purus pulvinar fringilla ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-              <br /><br />
-              Sed fringilla, tortor vel porta consectetur, quam felis imperdiet eros, quis dictum ligula elit eu tellus. Nam dictum sit amet eros vel finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nulla risus, malesuada ac neque id, tempor varius ante. Proin luctus vulputate diam ac volutpat.
+              The Queens Festival takes place in Copenhagen from the 12th to 16th of May 2019 at Aalborg University Copenhagen. The festival celebrates everything that EASTN-DC is about: art, science, technology, and digital creativity with workshops, art installations, concerts, and theatrical performances.
             </p>
           </div>
         </div>
@@ -230,31 +361,27 @@
 
     <div class="card-columns mx-auto" style="max-width:1000px">
       <div class="card text-center" >
-        <img class="card-img-top" src="Figura.jpg" alt="Card image" style="width:100%">
+        <img class="card-img-top" src="images/Salt.png" alt="Card image" style="width:100%">
         <div class="card-header">
-          <h3 class="card-title">Figura Ensemble</h3>
+          <h3 class="card-title">Salt Itinerary</h3>
         </div>
         <div class="card-body">
           <p class="card-text">
-            A mezzo-soprano, three musicians, a composer, a poet and an architect – FIGURA Ensemble is a musical collective with a mind of its own.
-            <br /><br />
-            Each of the seven artists of FIGURA are among Denmark’s most respected – Helene Gjerris, Jesper Egelund, Frans Hansen, Anna Klett, Peter Bruun, Filippa Berglund and Ursula Andkjær Olsen.
-            <br /><br />
-            Together, over the last 24 years, FIGURA has challenged both collaborators and audiences alike with exceptional concerts and modern music theatre – not to mention their ‘Small Composers’ workshops that reach out to the coming generation of music-lovers.
+            Salt Itinerary performance transcends theatrical and music conventions in a combination of text and music, where the voice is at the core of the staging dramaturgy, multiplying itself through audio and video. This stage work by Miguel Azguime developed the combination of text and music, extending Azguime's concept of “speech as music” and “music as speech”, growing in several directions (notably by means of technology - both audio and video) and embodying different realms (spoken, sung, hypervoice). It revolves around languages, words as meaning and words as sound.
           </p>
         </div>
         <div class="card-footer">
           <p class="card-footer-text">
             <b>Location:</b> <br> Aalborg University Copenhagen campus
             <br /><br />
-            <b>Time:</b> <br> 13th of May at 18:00
+            <b>Time:</b> <br> 16th of May
           </p>
         </div>
       </div>
 
 
     <div class="card text-center" >
-      <img class="card-img-top" src="small.jpg" alt="Card image" style="width:100%">
+      <img class="card-img-top" src="images/small.jpg" alt="Card image" style="width:100%">
       <div class="card-header">
         <h3 class="card-title">Small composers</h3>
       </div>
@@ -273,7 +400,7 @@
     </div>
 
     <div class="card text-center" >
-      <img class="card-img-top" src="theremin.jpg" alt="Card image" style="width:100%">
+      <img class="card-img-top" src="images/theremin.jpg" alt="Card image" style="width:100%">
       <div class="card-header">
         <h3 class="card-title">Kid Cool Theremin School</h3>
       </div>
@@ -292,7 +419,7 @@
     </div>
 
     <div class="card text-center" >
-      <img class="card-img-top" src="Chrysler.JPG" alt="Card image" style="width:100%">
+      <img class="card-img-top" src="images/Chrysler.JPG" alt="Card image" style="width:100%">
       <div class="card-header">
         <h3 class="card-title">Dorit Chrysler Theremin Concert</h3>
       </div>
@@ -311,7 +438,7 @@
     </div>
 
     <div class="card text-center" >
-      <img class="card-img-top" src="Queen.jpg" alt="Card image" style="width:100%">
+      <img class="card-img-top" src="images/Queen.jpg" alt="Card image" style="width:100%">
       <div class="card-header">
         <h3 class="card-title">Black Queen Opera</h3>
       </div>
@@ -330,7 +457,7 @@
     </div>
 
     <div class="card text-center" >
-      <img class="card-img-top" src="Jewellery.jpg" alt="Card image" style="width:100%">
+      <img class="card-img-top" src="images/Jewellery.jpeg" alt="Card image" style="width:100%">
       <div class="card-header">
         <h3 class="card-title">Jewellery workshop</h3>
       </div>
@@ -351,7 +478,7 @@
   <div class="container" style="background:rgb(91, 76, 135); height: 100px; width: 450px">
     <a href="#">
       <div class="row">
-        <div class="col-2"><img src="tickets.png" alt="tickets" style="height:100px"></div>
+        <div class="col-2"><img src="images/tickets.png" alt="tickets" style="height:100px"></div>
         <div class="col-10">
           <p class="text-center" style="line-height: 100px; color: white; font-size: 25px"><b>GET TICKETS</b></p>
         </div>
@@ -367,26 +494,41 @@
       <h1 class="pagetitle">Programme</h1>
     </div>
 
-    <div class="card-columns mx-auto" style="max-width:1000px">
-      <div class="card text-center" >
-        <a href="roadmap.html#scenarios">
-          <img class="card-img-top" src="img_5.jpg" alt="Card image" style="width:100%; max-height: 300px">
-          <div class="card-header">
-            <h3 class="card-title">The programme</h3>
-          </div>
-        </a>
-        <div class="card-body">
-          <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sed orci sit amet sollicitudin. Cras euismod eget nisi quis volutpat. Duis vitae orci quis arcu egestas porta. Duis at tortor sed lacus venenatis tristique et et dolor. In tristique ex eu tortor feugiat mollis. Suspendisse id lacus quis risus pretium vehicula.
-          </p>
+    <div class="container-fluid" style="padding-left: 50px">
+      <div class="row">
+        <div class="col-sm-2 text-center" style="padding:0px">
+
+          <h3 style="color:rgb(91, 76, 135)">May 2019</h3>
+
+          <a href="#">
+            <div class="date_btn border-bottom" style="border-radius: 5px 5px 0px 0px;">
+              <p>Sun 12</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="date_btn border-bottom">
+              <p>Sun 12</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="date_btn border-bottom">
+              <p>Sun 12</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="date_btn border-bottom">
+              <p>Sun 12</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="date_btn" style="border-radius: 0px 0px 5px 5px;">
+              <p>Sun 12</p>
+            </div>
+          </a>
         </div>
-        <a href="roadmap.html#scenarios" style="background: #1B6884; color: white">
-          <div class="card-footer">
-            <p class="card-footer-text">More</p>
-          </div>
-        </a>
       </div>
     </div>
+
   </div>
 
   <div id="venues" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)";>
@@ -396,7 +538,7 @@
 
     <div class="card-columns mx-auto" style="max-width:1000px">
       <div class="card text-center" >
-        <img class="card-img-top" src="aau.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <img class="card-img-top" src="images/aau.jpeg" alt="Card image" style="width:100%; max-height: 200px">
         <div class="card-header">
           <h3 class="card-title">Aalborg University Copenhagen</h3>
         </div>
@@ -407,7 +549,7 @@
         </div>
       </div>
       <div class="card text-center" >
-        <img class="card-img-top" src="kirke.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <img class="card-img-top" src="images/kirke.jpg" alt="Card image" style="width:100%; max-height: 200px">
         <div class="card-header">
           <h3 class="card-title">Frederiksholm Kirke</h3>
         </div>
@@ -431,6 +573,24 @@
     marker.setMap(map);
     marker2.setMap(map);
     }
+
+    (function() {
+      var dropdownMenu;
+      $(window).on('show.bs.dropdown', function(e) {
+        dropdownMenu = $(e.target).find('.dropdown-menu');
+        $('body').append(dropdownMenu.detach());
+        dropdownMenu.css('display', 'block');
+        dropdownMenu.position({
+          'my': 'right top',
+          'at': 'right bottom',
+          'of': $(e.relatedTarget)
+        })
+      });
+      $(window).on('hide.bs.dropdown', function(e) {
+        $(e.target).append(dropdownMenu.detach());
+        dropdownMenu.hide();
+      });
+    })();
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYYeCaLmBl6-LxjwJkp-3x9xBkLpzRV4w&callback=myMap"></script>
   </div>
