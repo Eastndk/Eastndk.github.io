@@ -145,7 +145,25 @@
     border-color: white;
     background: rgb(91, 76, 135);
     color:white;
+    margin-bottom: 0px;
   }
+
+  .date_link{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .connection-line {
+    width:100%;
+    height:25px;
+	  background: linear-gradient(to right,
+	                              transparent 0%,
+	                              transparent calc(50% - 1.51px),
+	                              gold    calc(50% - 1.5px),
+	                              gold   calc(50% + 1.5px),
+	                              transparent calc(50% + 1.51px),
+	                              transparent 100%);
+	}
 
 </style>
 
@@ -500,31 +518,45 @@
 
           <h3 style="color:rgb(91, 76, 135)">May 2019</h3>
 
-          <a href="#">
-            <div class="date_btn border-bottom" style="border-radius: 5px 5px 0px 0px;">
-              <p>Sun 12</p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="date_btn border-bottom">
-              <p>Sun 12</p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="date_btn border-bottom">
-              <p>Sun 12</p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="date_btn border-bottom">
-              <p>Sun 12</p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="date_btn" style="border-radius: 0px 0px 5px 5px;">
-              <p>Sun 12</p>
-            </div>
-          </a>
+          <nav class="nav flex-column">
+            <a class="nav-link date_link" href="#">
+              <div class="date_btn" style="border-radius: 5px 5px 0px 0px;">
+                <p>Sun 12</p>
+              </div>
+            </a>
+
+            <div class="connection-line"></div>
+
+            <a class="nav-link date_link" href="#">
+              <div class="date_btn">
+                <p>Sun 12</p>
+              </div>
+            </a>
+
+            <div class="connection-line"></div>
+
+            <a class="nav-link date_link" href="#">
+              <div class="date_btn">
+                <p>Sun 12</p>
+              </div>
+            </a>
+
+            <div class="connection-line"></div>
+
+            <a class="nav-link date_link" href="#">
+              <div class="date_btn">
+                <p>Sun 12</p>
+              </div>
+            </a>
+
+            <div class="connection-line"></div>
+
+            <a class="nav-link date_link" href="#">
+              <div class="date_btn" style="border-radius: 0px 0px 5px 5px;">
+                <p>Sun 12</p>
+              </div>
+            </a>
+          </nav>
         </div>
       </div>
     </div>
