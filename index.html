@@ -37,12 +37,6 @@ Theremin<!DOCTYPE html>
     padding-bottom: 25px;
   }
 
-  .scrollspy-example {
-    position: relative;
-    height: 250px;
-    overflow: auto;
-  }
-
   .navbar-default {
     font-family: Montserrat, sans-serif;
     background-color: rgb(91, 76, 135);
@@ -243,7 +237,7 @@ Theremin<!DOCTYPE html>
           <img src="images/top.jpg" alt="Card image" style="width:100%; min-height:334px; object-fit: cover; border-radius: 5px 0px 0px 0px">
         </div>
         <div class="col-md-4" style="background:rgb(91, 76, 135); border-radius: 0px 5px 0px 0px">
-          <h1 class="call-title">Queens Festival<br>Copenhagen<br>May 12th-16th, 2019</h1>
+          <h1 class="call-title">Queens Festival<br>Copenhagen<br>May 13th-16th, 2019</h1>
         </div>
       </div>
     </div>
@@ -406,11 +400,9 @@ Theremin<!DOCTYPE html>
 
             <h3 style="color:rgb(91, 76, 135)">May 2019</h3>
 
-            <nav class="nav flex-column" style="padding-right: 20px">
+            <nav id="myScrollspy" class="nav flex-column" style="padding-right: 20px">
               <ul class="nav nav-pills flex-column">
-                <li class="nav-item"><a class="nav-link text-center active" data-toggle="pill" href="#Sun" onmouseover="click();" style="line-height:50px; padding:0">Sun. 12th</a></li>
-                <div class="connection-line"></div>
-                <li class="nav-item"><a class="nav-link text-center" data-toggle="pill" href="#Mon" onmouseover="click();" style="line-height:50px; padding:0">Mon. 13th</a></li>
+                <li class="nav-item"><a class="nav-link text-center active" data-toggle="pill" href="#Mon" onmouseover="click();" style="line-height:50px; padding:0">Mon. 13th</a></li>
                 <div class="connection-line"></div>
                 <li class="nav-item"><a class="nav-link text-center" data-toggle="pill" href="#Tue" onmouseover="click();" style="line-height:50px; padding:0">Tue. 14th</a></li>
                 <div class="connection-line"></div>
@@ -424,89 +416,9 @@ Theremin<!DOCTYPE html>
           <div class="col-sm-1"> </div>
 
           <div class="col-sm-6 text-center">
-            <div class="tab-content">
-              <div class="tab-pane active" id="Sun">
-                <h3 style="color:rgb(91, 76, 135)">Sunday May 12th</h3>
-                <a href="#Jewellery">
-                  <div class="row">
-                    <div class="col-sm-4 time_btn" style="background: rgb(203, 230, 81); border-radius: 5px 0px 0px 0px; padding:0px;">
-                      <p><b>9:00-12:00</b></p>
-                    </div>
-                    <div class="col-sm-8 time_btn" style="border-radius: 0px 5px 0px 0px; padding:0px">
-                      <p>Jewellery Workshop</p>
-                    </div>
-                  </div>
-                </a>
-                <div id="Jewellery"style="margin-left:-15px;margin-right:-15px">
-                  <img class="event-img-top" src="images/jewellery.jpeg" alt="Card image" style="width: 100%">
-                  <div style="background:white">
-                    <p style="margin-left:20px;margin-right:20px;margin-bottom:0px">
-                      Description and details will follow.
-                    </p>
-                  </div>
-                  <div class="event-footer">
-                    <p style="margin:0px">
-                      <b>Location:</b> <br> Aalborg University Copenhagen campus
-                    </p>
-                  </div>
-                </div>
-
-                <div class="connection-line"></div>
-
-                <a href="#Small">
-                  <div class="row">
-                    <div class="col-sm-4 time_btn" style="background: rgb(203, 230, 81); border-radius: 5px 0px 0px 0px;">
-                      <p><b>13:00-16:00</b></p>
-                    </div>
-                    <div class="col-sm-8 time_btn" style="border-radius: 0px 5px 0px 0px;">
-                      <p>Small Composers</p>
-                    </div>
-                  </div>
-                </a>
-                <div id="Small" style="margin-left:-15px;margin-right:-15px">
-                  <img class="event-img-top" src="images/small.jpg" alt="Card image" style="width:100%">
-                  <div style="background:white">
-                    <p style="margin-left:20px;margin-right:20px;margin-bottom:0px">
-                      In ‘Small Composers’ children in age group 1st-5th grade are invited to delve into the world of classical music and its composers. Students participate in playful musical expression and becomes a part of simple rhythmic and melodic figures. They use body, voice and available sound sources in the creative musical work and produce sound illustrations and sound scenery of their own stories. They listen attentively to short pieces of music. They get the opportunity to experience and evaluate artistic quality.
-                    </p>
-                  </div>
-                  <div class="event-footer">
-                    <p style="margin:0px">
-                      <b>Location:</b> <br> Aalborg University Copenhagen campus
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="tab-pane" id="Mon">
+            <div class="tab-content" data-spy="scroll" data-target="#myScrollspy" data-offset="20" >
+              <div class="tab-pane active" id="Mon">
                 <h3 style="color:rgb(91, 76, 135)">Monday May 13th</h3>
-                <a href="#Work1">
-                  <div class="row">
-                    <div class="col-sm-4 time_btn" style="background: rgb(203, 230, 81); border-radius: 5px 0px 0px 0px;">
-                      <p><b>10:00</b></p>
-                    </div>
-                    <div class="col-sm-8 time_btn" style="border-radius: 0px 5px 0px 0px;">
-                      <p>Workshops and talks (open for submissions)</p>
-                    </div>
-                  </div>
-                </a>
-                <div id="Work1" style="margin-left:-15px;margin-right:-15px">
-                  <img class="event-img-top" src="images/call.png" alt="Card image" style="width:100%">
-                  <div style="background:white">
-                    <p style="margin-left:20px;margin-right:20px;margin-bottom:0px">
-                      We encourage anyone to submit talks or workshops that celebrates digital creativity within the areas of art, science, technology, and sound.
-                    </p>
-                  </div>
-                  <div class="event-footer">
-                    <p style="margin:0px">
-                      <b>Location:</b> <br> Aalborg University Copenhagen campus
-                    </p>
-                  </div>
-                </div>
-
-                <div class="connection-line"></div>
-
                 <a href="#yann">
                   <div class="row">
                     <div class="col-sm-4 time_btn" style="background: rgb(203, 230, 81); border-radius: 5px 0px 0px 0px;">
@@ -518,7 +430,7 @@ Theremin<!DOCTYPE html>
                   </div>
                 </a>
                 <div id="yann" style="margin-left:-15px;margin-right:-15px">
-                  <img class="event-img-top" src="images/yann.jpeg" alt="Card image" style="width:100%">
+                  <img class="event-img-top" src="images/yann.jpg" alt="Card image" style="width:100%">
                   <div style="background:white">
                     <p style="margin-left:20px;margin-right:20px;margin-bottom:0px">
                       Creative programming, as typically done by digital artists and musicians, is a particular form of programming used as a means of discovery and invention. It, therefore, goes beyond the traditional framework of an engineering approach that aims to implement, as best as possible, an idea that often pre-exists and is reasonably well specified.
@@ -535,48 +447,83 @@ Theremin<!DOCTYPE html>
 
                 <div class="connection-line"></div>
 
-                <a href="#Theremin">
+                <a href="#Faust">
                   <div class="row">
                     <div class="col-sm-4 time_btn" style="background: rgb(203, 230, 81); border-radius: 5px 0px 0px 0px;">
-                      <p><b>20:00</b></p>
+                      <p><b>15:00</b></p>
                     </div>
                     <div class="col-sm-8 time_btn" style="border-radius: 0px 5px 0px 0px;">
-                      <p>Theremin concert w/Dorit Chrysler</p>
+                      <p>Demos from Digital Fabrication Workshop</p>
                     </div>
                   </div>
                 </a>
-                <div id="Theremin" style="margin-left:-15px;margin-right:-15px">
-                  <img class="event-img-top" src="images/Chrysler.JPG" alt="Card image" style="width:100%">
+                <div id="Faust" style="margin-left:-15px;margin-right:-15px">
+                  <img class="event-img-top" src="images/smc.jpg" alt="Card image" style="width:100%">
                   <div style="background:white">
                     <p style="margin-left:20px;margin-right:20px;margin-bottom:0px">
-                      Dorit Chrysler has been dubbed a superior wizard of the Theremin. An Austrian-born, New York based composer and sound artist, Chrysler is the co-founder of the New York Theremin Society and founder of the first school of Theremin, KidCoolThereminSchool. As much as the Theremin is a tool in Chrysler’s electronic instrument arsenal, she's also one the most visible Thereminists spreading the gospel of this mysterious sounding instrument, which is basically played by massaging thin air.
+                      Description and details will follow.
                     </p>
                   </div>
                   <div class="event-footer">
                     <p style="margin:0px">
-                      <b>Location:</b> <br> Frihavnskirken
+                      <b>Location:</b> <br> Aalborg University Copenhagen campus
+                    </p>
+                  </div>
+                </div>
+
+                <div class="connection-line"></div>
+
+                <a href="#Tribute" >
+                  <div class="row">
+                    <div class="col-sm-4 time_btn" style="background: rgb(203, 230, 81); border-radius: 5px 0px 0px 0px;">
+                      <p><b>19:00</b></p>
+                    </div>
+                    <div class="col-sm-8 time_btn" style="border-radius: 0px 5px 0px 0px;">
+                      <p>Queen Tribute Concert</p>
+                    </div>
+                  </div>
+                </a>
+                <div id="Tribute" style="margin-left:-15px;margin-right:-15px">
+                  <img class="event-img-top" src="images/Pretentious_Queens.png" alt="Card image" style="width:100%">
+                  <div style="background:white">
+                    <p style="margin-left:20px;margin-right:20px;margin-bottom:0px">
+                      Let’s cover some Queen! On the final day of the festival, we want anyone musically inclined to channel their inner Freddie Mercury.
+                      <br /><br />
+                      We hope to see music created with physical modeling, self made instruments, real world sampling, audience participation, interesting visuals, etc.
+                      <br /><br />
+                      We only ask that:
+                      <ul class="text-left">
+                        <li>You play songs from the Queen repertoire</li>
+                        <li>You incorporate the spirit of art, science, technology, and digital creativity</li>
+                      </ul>
+                      <br /><br />
+                      If you have the music, but lack the singing (or vice versa), let us know and we’ll try to help with the pairing. Or maybe you just want to contribute with cool visuals? Let us know.
+                  </div>
+                  <div class="event-footer">
+                    <p style="margin:0px">
+                      <b>Location:</b> <br> Aalborg University Copenhagen campus
                     </p>
                   </div>
                 </div>
               </div>
 
               <div class="tab-pane" id="Tue">
-                <h3 style="color:rgb(91, 76, 135)">Tuesday May 14th</h3>
-                <a href="#School">
+              <h3 style="color:rgb(91, 76, 135)">Tuesday May 14th</h3>
+                <a href="#Jewellery">
                   <div class="row">
-                    <div class="col-sm-4 time_btn" style="background: rgb(203, 230, 81); border-radius: 5px 0px 0px 0px;">
-                      <p><b>10:00</b></p>
+                    <div class="col-sm-4 time_btn" style="background: rgb(203, 230, 81); border-radius: 5px 0px 0px 0px; padding:0px;">
+                      <p><b>16:00</b></p>
                     </div>
-                    <div class="col-sm-8 time_btn" style="border-radius: 0px 5px 0px 0px;">
-                      <p>Kid Cool Theremin School w/Dorit Chrysler</p>
+                    <div class="col-sm-8 time_btn" style="border-radius: 0px 5px 0px 0px; padding:0px">
+                      <p>Jewellery Workshop</p>
                     </div>
                   </div>
                 </a>
-                <div id="School" style="margin-left:-15px;margin-right:-15px">
-                  <img class="event-img-top" src="images/theremin.jpg" alt="Card image" style="width:100%">
+                <div id="Jewellery"style="margin-left:-15px;margin-right:-15px">
+                  <img class="event-img-top" src="images/jewellery.jpeg" alt="Card image" style="width: 100%">
                   <div style="background:white">
                     <p style="margin-left:20px;margin-right:20px;margin-bottom:0px">
-                      Kid Cool Theremin School is dedicated to inspire and nurture creative learning and expression through innovative music education, art and science. As part of the music and education department of Pioneer Works Center for Arts and Innovation, NY and the NY Theremin Society, the Kid Cool Theremin School nurtures an environment devoted to creative discourse and collaboration for children and parents alike, and is working towards participation rather than being passive spectators through a deep integration of the arts. Without pre consisting playing techniques and the primal and unusual way of how a Theremin is being played, it enhances autonomous and creative thinking and opens up a new universe of expression for parents and children alike.
+                      Description and details will follow.
                     </p>
                   </div>
                   <div class="event-footer">
@@ -615,21 +562,21 @@ Theremin<!DOCTYPE html>
 
               <div class="tab-pane" id="Wed">
                 <h3 style="color:rgb(91, 76, 135)">Wednesday May 15th</h3>
-                <a href="#Work2" >
+                <a href="#Med">
                   <div class="row">
                     <div class="col-sm-4 time_btn" style="background: rgb(203, 230, 81); border-radius: 5px 0px 0px 0px;">
-                      <p><b>10:00</b></p>
+                      <p><b>13:00</b></p>
                     </div>
                     <div class="col-sm-8 time_btn" style="border-radius: 0px 5px 0px 0px;">
-                      <p>Workshops and talks (open for submissions)</p>
+                      <p>Medialogy 4 Demo</p>
                     </div>
                   </div>
                 </a>
-                <div id="Work2" style="margin-left:-15px;margin-right:-15px">
-                  <img class="event-img-top" src="images/call.png" alt="Card image" style="width:100%">
+                <div id="Med" style="margin-left:-15px;margin-right:-15px">
+                  <img class="event-img-top" src="images/smc.jpg" alt="Card image" style="width:100%">
                   <div style="background:white">
                     <p style="margin-left:20px;margin-right:20px;margin-bottom:0px">
-                      We encourage anyone to submit talks or workshops that celebrates digital creativity within the areas of art, science, technology, and sound.
+                      Description and details will follow.
                     </p>
                   </div>
                   <div class="event-footer">
@@ -668,47 +615,22 @@ Theremin<!DOCTYPE html>
 
               <div class="tab-pane" id="Thu">
                 <h3 style="color:rgb(91, 76, 135)">Thursday May 16th</h3>
-                <a href="#Work3">
+                <a href="#School">
                   <div class="row">
                     <div class="col-sm-4 time_btn" style="background: rgb(203, 230, 81); border-radius: 5px 0px 0px 0px;">
-                      <p><b>10:00</b></p>
+                      <p><b>13:00</b></p>
                     </div>
                     <div class="col-sm-8 time_btn" style="border-radius: 0px 5px 0px 0px;">
-                      <p>Workshops and talks (open for submissions)</p>
+                      <p>Kid Cool Theremin School w/Dorit Chrysler</p>
                     </div>
                   </div>
                 </a>
-                <div id="Work3" style="margin-left:-15px;margin-right:-15px">
-                  <img class="event-img-top" src="images/call.png" alt="Card image" style="width:100%">
+                <div id="School" style="margin-left:-15px;margin-right:-15px">
+                  <img class="event-img-top" src="images/theremin.jpg" alt="Card image" style="width:100%">
                   <div style="background:white">
                     <p style="margin-left:20px;margin-right:20px;margin-bottom:0px">
-                      We encourage anyone to submit talks or workshops that celebrates digital creativity within the areas of art, science, technology, and sound.
-                  </div>
-                  <div class="event-footer">
-                    <p style="margin:0px">
-                      <b>Location:</b> <br> Aalborg University Copenhagen campus
+                      Kid Cool Theremin School is dedicated to inspire and nurture creative learning and expression through innovative music education, art and science. As part of the music and education department of Pioneer Works Center for Arts and Innovation, NY and the NY Theremin Society, the Kid Cool Theremin School nurtures an environment devoted to creative discourse and collaboration for children and parents alike, and is working towards participation rather than being passive spectators through a deep integration of the arts. Without pre consisting playing techniques and the primal and unusual way of how a Theremin is being played, it enhances autonomous and creative thinking and opens up a new universe of expression for parents and children alike.
                     </p>
-                  </div>
-                </div>
-
-
-                <div class="connection-line"></div>
-
-                <a href="#Salt">
-                  <div class="row">
-                    <div class="col-sm-4 time_btn" style="background: rgb(203, 230, 81); border-radius: 5px 0px 0px 0px;">
-                      <p><b>17:00</b></p>
-                    </div>
-                    <div class="col-sm-8 time_btn" style="border-radius: 0px 5px 0px 0px;">
-                      <p>Salt Itinerary</p>
-                    </div>
-                  </div>
-                </a>
-                <div id="Salt" style="margin-left:-15px;margin-right:-15px">
-                  <img class="event-img-top" src="images/Salt.png" alt="Card image" style="width:100%">
-                  <div style="background:white">
-                    <p style="margin-left:20px;margin-right:20px;margin-bottom:0px">
-                      Salt Itinerary performance transcends theatrical and music conventions in a combination of text and music, where the voice is at the core of the staging dramaturgy, multiplying itself through audio and video. This stage work by Miguel Azguime developed the combination of text and music, extending Azguime's concept of “speech as music” and “music as speech”, growing in several directions (notably by means of technology - both audio and video) and embodying different realms (spoken, sung, hypervoice). It revolves around languages, words as meaning and words as sound.
                   </div>
                   <div class="event-footer">
                     <p style="margin:0px">
@@ -719,35 +641,26 @@ Theremin<!DOCTYPE html>
 
                 <div class="connection-line"></div>
 
-                <a href="#Tribute" >
+                <a href="#Theremin">
                   <div class="row">
                     <div class="col-sm-4 time_btn" style="background: rgb(203, 230, 81); border-radius: 5px 0px 0px 0px;">
                       <p><b>20:00</b></p>
                     </div>
                     <div class="col-sm-8 time_btn" style="border-radius: 0px 5px 0px 0px;">
-                      <p>Queen Tribute Concert</p>
+                      <p>Theremin concert w/Dorit Chrysler</p>
                     </div>
                   </div>
                 </a>
-                <div id="Tribute" style="margin-left:-15px;margin-right:-15px">
-                  <img class="event-img-top" src="images/freddie.jpg" alt="Card image" style="width:100%">
+                <div id="Theremin" style="margin-left:-15px;margin-right:-15px">
+                  <img class="event-img-top" src="images/Chrysler.JPG" alt="Card image" style="width:100%">
                   <div style="background:white">
                     <p style="margin-left:20px;margin-right:20px;margin-bottom:0px">
-                      Let’s cover some Queen! On the final day of the festival, we want anyone musically inclined to channel their inner Freddie Mercury.
-                      <br /><br />
-                      We hope to see music created with physical modeling, self made instruments, real world sampling, audience participation, interesting visuals, etc.
-                      <br /><br />
-                      We only ask that:
-                      <ul class="text-left">
-                        <li>You play songs from the Queen repertoire</li>
-                        <li>You incorporate the spirit of art, science, technology, and digital creativity</li>
-                      </ul>
-                      <br /><br />
-                      If you have the music, but lack the singing (or vice versa), let us know and we’ll try to help with the pairing. Or maybe you just want to contribute with cool visuals? Let us know.
+                      Dorit Chrysler has been dubbed a superior wizard of the Theremin. An Austrian-born, New York based composer and sound artist, Chrysler is the co-founder of the New York Theremin Society and founder of the first school of Theremin, KidCoolThereminSchool. As much as the Theremin is a tool in Chrysler’s electronic instrument arsenal, she's also one the most visible Thereminists spreading the gospel of this mysterious sounding instrument, which is basically played by massaging thin air.
+                    </p>
                   </div>
                   <div class="event-footer">
                     <p style="margin:0px">
-                      <b>Location:</b> <br> Aalborg University Copenhagen campus
+                      <b>Location:</b> <br> Frihavnskirken
                     </p>
                   </div>
                 </div>
@@ -943,6 +856,7 @@ Theremin<!DOCTYPE html>
       {
        document.getElementById("subject").value= 'I will be attending the Queens Festival';
       }
+
       </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYYeCaLmBl6-LxjwJkp-3x9xBkLpzRV4w&callback=myMap"></script>
       <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
